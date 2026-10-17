@@ -23,14 +23,7 @@
 
 body {
   background-color: var(--background);
-  background-image:
-    repeating-linear-gradient(
-      transparent 0px,
-      transparent 78px,
-      rgba(44, 59, 46, 0.05) 79px,
-      transparent 80px
-    ),
-    linear-gradient(180deg, #f4ead6 0%, #ecddc1 100%);
+  background-image: linear-gradient(180deg, #f4ead6 0%, #ecddc1 100%);
   color: var(--color-ink);
   font-family: var(--font-body), sans-serif;
 }
