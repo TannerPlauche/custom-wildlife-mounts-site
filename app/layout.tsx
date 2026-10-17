@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Custom Wildlife Mounts | Leitchfield KY Taxidermy",
   description:
     "Custom Wildlife Mounts and Outfitting LLC provides quality taxidermy services in Leitchfield, Kentucky.",
+  icons: {
+    icon: "/images/cwlm_fav.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
