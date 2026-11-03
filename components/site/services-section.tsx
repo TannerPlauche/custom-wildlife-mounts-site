@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -89,6 +90,11 @@ export function ServicesSection() {
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
+        </div>
+        <div className="flex justify-center">
+          <Link className="btn-primary" href="/book">
+            Book Now
+          </Link>
         </div>
       </div>
     </SectionShell>

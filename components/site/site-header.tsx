@@ -37,6 +37,9 @@ export function SiteHeader() {
               Call
             </span>
           </a>
+          <Link className="btn-primary ml-1 hidden whitespace-nowrap px-5 py-2 lg:inline-flex" href="/book">
+            Book Now
+          </Link>
         </nav>
       </div>
     </header>

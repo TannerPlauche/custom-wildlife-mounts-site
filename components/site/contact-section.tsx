@@ -13,7 +13,7 @@ export function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           title="Ready To Start A Mount?"
-          description="Call or message to discuss your project, timeline, and drop-off details."
+          description="Book online, or call or message to discuss your project, timeline, and drop-off details."
         />
         <div className="space-y-5 rounded-2xl border border-[var(--color-forest)]/25 bg-[var(--color-panel)] p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
@@ -26,8 +26,11 @@ export function ContactSection() {
               Phone: <a href="tel:+12707483990">270-748-3990</a>
             </p>
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a className="btn-primary" href="tel:+12707483990">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link className="btn-primary" href="/book">
+              Book Now
+            </Link>
+            <a className="btn-secondary" href="tel:+12707483990">
               Call Now
             </a>
             <Link className="btn-secondary" href={facebookUrl} target="_blank">

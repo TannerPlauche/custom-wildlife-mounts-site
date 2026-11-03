@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { GalleryGrid } from "@/components/site/gallery-grid";
 import { SiteFooter } from "@/components/site/site-footer";
@@ -25,6 +26,11 @@ export default function WorkPage() {
               description="A look at recent mounts completed for hunters across Leitchfield and beyond. Filter by category or click any photo for a closer look."
             />
             <GalleryGrid />
+            <div className="flex justify-center">
+              <Link className="btn-primary" href="/book">
+                Book Now
+              </Link>
+            </div>
           </div>
         </SectionShell>
       </main>

@@ -37,13 +37,19 @@ export function HeroSection() {
               honors the story behind every trophy.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a className="btn-hero-primary" href="tel:+12707483990">
+              <Link className="btn-hero-primary" href="/book">
+                Book Now
+              </Link>
+              <a className="btn-hero-secondary" href="tel:+12707483990">
                 Call 270-748-3990
               </a>
-              <Link className="btn-hero-secondary" href="/work">
-                View Our Work
-              </Link>
             </div>
+            <Link
+              className="inline-block text-sm font-semibold uppercase tracking-[0.12em] text-[var(--color-cream)] underline underline-offset-4 transition hover:text-[var(--color-accent)]"
+              href="/work"
+            >
+              View Our Work
+            </Link>
           </div>
 
           <div className="space-y-4 rounded-2xl border border-[color:rgba(248,242,230,0.25)] bg-[color:rgba(20,18,12,0.55)] p-6 backdrop-blur-sm md:p-8">
